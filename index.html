@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBqF-oVIt9PzuLJ1rhQ2sHLtOrS9gh3kOc",
+      authDomain: "vainillachat.firebaseapp.com",
+      databaseURL: "https://vainillachat.firebaseio.com",
+      projectId: "vainillachat",
+      storageBucket: "vainillachat.appspot.com",
+      messagingSenderId: "407773737478",
+      appId: "1:407773737478:web:44a7689b4466828dd04987"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <title>Vainillachat || JS</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand" id="nombreUsuario">🗨 Chat</span>
+      <div id="botones"></div>
+    </nav>
+
+    <main id="protected-content">
+
+    </main>
+
+    <form class="input-group py-5 fixed-bottom container" id="chat-form">
+      <input type="text" class="form-control" placeholder="Enviar...">
+      <div class="input-group-append">
+        <button class="btn btn-success">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
